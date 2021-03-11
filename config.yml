@@ -1,0 +1,9 @@
+# Application configuration
+
+# Kafka brokers
+brokers:
+  - "localhost:9092" # app on VM host/guest (In case of VM host port should be forwarded from guest to host)
+  - "kafka:9093"     # app on same Docker network with Kafka (Docker container with Golang)
+
+# Topic name for messages
+topic: test-01
